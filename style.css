@@ -8,10 +8,11 @@ body {
 }
 
 #building {
-    display: flex;
+    display: block;
     position: absolute;
     left: -3%;
-    height: 350vh;
+    top: 10%;
+    height: 400vh;
     width: 220vh;
     margin: 0;
 }
@@ -36,4 +37,63 @@ body {
     border: 5px solid white;
     font-family: 'Spooky';
     text-shadow: #e3a5a7 2px 0 10px;
+}
+
+#ghost1 {
+    display: flex;
+    position: sticky;
+    height: 100px;
+    width: 100px;
+    top: 25%;
+    z-index: 2;
+    opacity: 0.5;
+    transform: scaleX(-1);
+    transition: transform 0.5s ease;
+}
+
+#ghost2 {
+    display: flex;
+    position: sticky;
+    height: 150px;
+    width: 150px;
+    top: 10%;
+    left: 70%;
+    z-index: 2;
+    opacity: 0.5;
+    transition: transform 0.5s ease;
+}
+
+#ghost1:hover {
+    transform: translateX(50px) scaleX(-1);
+    opacity: 0.2;
+}
+
+#ghost2:hover {
+    transform: translateX(-75px) translateY(50px);
+    opacity: 0.2;
+}
+
+#ghostDrop {
+    height: 100vh;
+}
+
+#pumpkin1 {
+    display: flex;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 356vh;
+    left: 47%;
+    z-index: 1;
+    transition: transform 0.5s ease;
+}
+
+#pumpkin1:hover {
+    transform: translateY(50px) rotate(80deg);
+}
+
+#room2Title {
+    font-family: 'Spooky';
+    font-size: 50px;
+    color: whitesmoke;
 }
