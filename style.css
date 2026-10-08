@@ -1,0 +1,39 @@
+body {
+    background-color: black;
+}
+
+#beginning {
+    height: 200vh;
+    background-color: black;
+}
+
+#building {
+    display: flex;
+    position: absolute;
+    left: -3%;
+    height: 350vh;
+    width: 220vh;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Spooky';
+    src: url('font/Creepster-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#titleText {
+    display: flex;
+    position: fixed;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    left: 15%;
+    top: 60%;
+    color: rgb(119, 18, 18);
+    font-size: 75px;
+    border: 5px solid white;
+    font-family: 'Spooky';
+    text-shadow: #e3a5a7 2px 0 10px;
+}
