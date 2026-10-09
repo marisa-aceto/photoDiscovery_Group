@@ -136,6 +136,7 @@ body {
     height: 100px;
     background-color: #ffe6f5;
     color: white;
+    text-align: center;
     line-height: 100px;
     cursor: pointer;
 }
@@ -147,6 +148,7 @@ body {
     height: 100px;
     background-color: #eec4ff;
     color: white;
+    text-align: center;
     line-height: 100px;
     cursor: pointer;
 }
