@@ -9,7 +9,7 @@ book2.addEventListener("click", function() {
 });
 
 function ghostActivity(book){
-    console.log(book.id);
+    book.classList.add("taken");
 
     if (choice ==="book1"){
         window.location.href = "index3.html";

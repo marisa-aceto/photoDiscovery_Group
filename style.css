@@ -152,3 +152,9 @@ body {
     line-height: 100px;
     cursor: pointer;
 }
+
+.taken{
+    transform: translateY(-100px);
+    opacity: 0;
+    transition:all
+}
