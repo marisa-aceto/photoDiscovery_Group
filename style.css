@@ -119,6 +119,17 @@ body {
     height: 100vh;
 }
 
+#ghost2Text{
+    display: flex;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 20px;
+    font-family: 'Spooky';
+}
+
 .shelf{
     width: 450px;
     position: absolute;
