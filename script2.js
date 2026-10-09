@@ -10,10 +10,11 @@ book2.addEventListener("click", function() {
 
 function ghostActivity(book){
     book.classList.add("taken");
-
-    if (choice ==="book1"){
-        window.location.href = "index3.html";
-    } else if (choice ==="book2"){
-        window.location.href = "index4.html";
-    }
+    setTimeout(function() {
+        if (choice ==="book1"){
+            window.location.href = "index3.html";
+        } else if (choice ==="book2"){
+            window.location.href = "index4.html";
+        }
+    });   
 }
