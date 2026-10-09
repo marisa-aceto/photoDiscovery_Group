@@ -124,3 +124,15 @@ body {
     position: relative;
     margin: 0 auto;
 }
+
+.book1, .book2{
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    height: 100px;
+    background-color: #8B0000;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+}
