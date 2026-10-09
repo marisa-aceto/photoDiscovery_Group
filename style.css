@@ -121,8 +121,12 @@ body {
 
 .shelf{
     width: 450px;
-    position: relative;
+    position: absolute;
     margin: 0 auto;
+    height: 500px;
+    background-color: brown;
+    border: 5px solid black;
+    bottom: 80px;
 }
 
 .book1, .book2{
@@ -130,7 +134,7 @@ body {
     bottom: 0;
     width: 50px;
     height: 100px;
-    background-color: #8B0000;
+    background-color: #ffe6f5;
     color: white;
     text-align: center;
     line-height: 100px;
