@@ -114,3 +114,13 @@ body {
     font-size: 50px;
     color: whitesmoke;
 }
+
+.ghostDrop2{
+    height: 100vh;
+}
+
+.shelf{
+    width: 450px;
+    position: relative;
+    margin: 0 auto;
+}
