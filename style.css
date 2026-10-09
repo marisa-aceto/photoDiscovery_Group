@@ -115,7 +115,7 @@ body {
     color: whitesmoke;
 }
 
-.ghostDrop2{
+#ghostDrop2{
     height: 100vh;
 }
 
@@ -129,43 +129,18 @@ body {
     bottom: 80px;
 }
 
-.book1{
+#book1, #book2{
     position: absolute;
     bottom: 0;
-    width: 50px;
+    width: 70px;
     height: 100px;
-    background-color: #ffe6f5;
-    color: white;
-    text-align: center;
-    line-height: 100px;
+    object-fit: contain;
+    display: block;
+    z-index: 2;
     cursor: pointer;
-    transition: all 0.5s ease;
-    opacity: 1s ease;
-    z-index: 5;
 }
 
-.book1.taken, .book2.taken{
-    transform: translateY(-100px);
-    opacity: 0;
-    transition:all
-}
-
-.book2{
-    position: absolute;
-    bottom: 0;
-    width: 50px;
-    height: 100px;
-    background-color: #eec4ff;
-    color: white;
-    text-align: center;
-    line-height: 100px;
-    cursor: pointer;
-    transition: all 0.5s ease;
-    opacity: 1s ease;
-    z-index: 5;
-}
-
-.taken{
+#book1.taken, #book2.taken{
     transform: translateY(-100px);
     opacity: 0;
     transition:all

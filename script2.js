@@ -1,11 +1,13 @@
 let book1 = document.getElementById('book1');
 book1.addEventListener("click", function() {
     ghostActivity(book1);
+    window.location.href = "index3.html";
 });
 
 let book2 = document.getElementById('book2');
 book2.addEventListener("click", function() {
     ghostActivity(book2);
+    window.location.href = "index4.html";
 });
 
 function ghostActivity(book){
