@@ -129,12 +129,24 @@ body {
     bottom: 80px;
 }
 
-.book1, .book2{
+.book1{
     position: absolute;
     bottom: 0;
     width: 50px;
     height: 100px;
     background-color: #ffe6f5;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+}
+
+.book2{
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    height: 100px;
+    background-color: #eec4ff;
     color: white;
     text-align: center;
     line-height: 100px;
