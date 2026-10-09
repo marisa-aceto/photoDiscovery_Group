@@ -109,7 +109,7 @@ body {
     opacity: 1;
 }
 
-#room2Title {
+#room2Title, #room3Title, #room4Title, #room5Title {
     font-family: 'Spooky';
     font-size: 50px;
     color: whitesmoke;
