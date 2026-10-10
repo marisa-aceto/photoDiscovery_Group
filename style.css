@@ -73,6 +73,7 @@ body {
     opacity: 0.3;
     transform: scaleX(-1);
     transition: 0.1s ease;
+    z-index: 2;
 }
 
 #ghost3:hover {
@@ -203,7 +204,7 @@ body {
 #book1.taken, #book2.taken{
     transform: translateY(-100px);
     opacity: 0;
-    transition:all
+    transition:all;
 }
 
 #candy1, #candy2{
@@ -241,4 +242,22 @@ body {
     width: 300px;
     left: 50%;
     top: 60%;
+}
+
+#wallPaper {
+    position: absolute;
+    display: flex;
+    height: 50px;
+    width: 35px;
+    left: 30%;
+    top: 40%;
+}
+
+#wallPaper:hover {
+    transform: scale(5);
+    z-index: 3;
+}
+
+audio {
+    z-index: 5;
 }
