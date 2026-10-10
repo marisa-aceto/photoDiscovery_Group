@@ -72,6 +72,11 @@ body {
     z-index: 2;
     opacity: 0.3;
     transform: scaleX(-1);
+    transition: 0.1s ease;
+}
+
+#ghost3:hover {
+    opacity: 0.5;
 }
 
 #ghost4 {
@@ -84,6 +89,10 @@ body {
     z-index: 2;
     opacity: 0.3;
     transition: transform 0.5s ease;
+}
+
+#ghost4:hover {
+    opacity: 0.5;
 }
 
 #ghost1:hover {
@@ -206,4 +215,30 @@ body {
     display: block;
     z-index: 2;
     cursor: pointer;
+}
+
+#roomWindow1 {
+    height: 100vh;
+    background-image: url("images/scaryRoom1.jpeg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#vampire {
+    position: absolute;
+    display: flex;
+    height: 300px;
+    width: 300px;
+    top: 60%;
+}
+
+#werewolf {
+    position: absolute;
+    display: flex;
+    height: 300px;
+    width: 300px;
+    left: 50%;
+    top: 60%;
 }
