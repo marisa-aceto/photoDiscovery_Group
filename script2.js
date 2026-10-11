@@ -10,7 +10,11 @@ book2.addEventListener("click", function() {
     window.location.href = "index4.html";
 });
 
-let ghost = document.getElementById('ghost2');
+let ghost1 = document.getElementById('ghost1');
+window.addEventListener("mousemove", function(event) {
+    ghost1.style.left = ((event.clientX) - 50) + "px";
+    ghost1.style.top = ((event.clientY) - 50) + "px";
+});
 
 function ghostActivity(book){
     book.classList.add("taken");

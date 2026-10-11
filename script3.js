@@ -1,7 +1,7 @@
 const choiceContainer = document.getElementById("choice-container");
 
-let ghost = document.getElementById('ghost');
-ghost.addEventListener("click", function() {
+let ghost2 = document.getElementById('ghost');
+ghost2.addEventListener("click", function() {
     window.location.href = "index3.html";
 });
 
