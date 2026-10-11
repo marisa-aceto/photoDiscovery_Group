@@ -211,15 +211,33 @@ body {
     transition:all;
 }
 
-#candy1, #candy2{
+#candy1{
     position: absolute;
     bottom: 0;
-    width:100px;
-    height: 100px;
+    width:50px;
+    height: 130px;
+    left: 150px;
     object-fit: contain;
     display: block;
-    z-index: 2;
+    z-index: 10;
     cursor: pointer;
+}
+
+#candy2{
+    position: absolute;
+    bottom: 0;
+    width:50px;
+    height: 130px;
+    left: 220px;
+    object-fit: contain;
+    display: block;
+    z-index: 10;
+    cursor: pointer;
+}
+
+#table{
+    width: 500px;
+    display: block;
 }
 
 #roomWindow1 {

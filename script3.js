@@ -1,10 +1,10 @@
 const choiceContainer = document.getElementById("choice-container");
 
 let ghost2 = document.getElementById('ghost');
-ghost2.addEventListener("click", function() {
-    window.location.href = "index3.html";
+window.addEventListener("mousemove", function(event) {
+    ghost2.style.left = ((event.clientX) - 50) + "px";
+    ghost2.style.top = ((event.clientY) - 50) + "px";
 });
-
 let candy = document.getElementById('candy');
 candy.addEventListener("click", function() {
 let candy1 = document.getElementById('candy');
@@ -56,8 +56,8 @@ setTimeout(function() {
     if (choice ==="candy1"){
         window.location.href = "index5.html";
     } else if (choice ==="candy2"){
-        
-       endGame();
+        window.location.href = "index3.html";
+        endGame();
     }
 }); 
 
@@ -66,8 +66,4 @@ function endGame(){
     choiceContainer.innerHTML = `
     <button onclick="resetGame()"> Play Again</button>
     `;
-}
-
-function resetGame(){
-      
 }
