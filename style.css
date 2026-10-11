@@ -96,7 +96,7 @@ body {
     transition: transform 0.5s ease;
 }
 
-#ghost5 {
+#ghost6 {
     display: flex;
     position: absolute;
     height: 150px;
@@ -175,7 +175,7 @@ body {
     opacity: 1;
 }
 
-#room2Title, #room3Title, #room4Title, #room5Title {
+#room2Title, #room3Title, #room4Title, #room5Title, #room6Title, #room7Title {
     font-family: 'Spooky';
     font-size: 50px;
     color: whitesmoke;
@@ -290,6 +290,15 @@ body {
 #wallPaper:hover {
     transform: scale(5);
     z-index: 3;
+}
+
+#room7 {
+    height: 100vh;
+    background-image: url("images/haunted-room-with-table.jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 audio {
