@@ -196,7 +196,7 @@ body {
     font-family: 'Spooky';
 }
 
-.shelf{
+#shelf{
     width: 450px;
     position: absolute;
     margin: 0 auto;
