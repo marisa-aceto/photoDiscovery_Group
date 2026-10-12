@@ -246,8 +246,8 @@ body {
     bottom: 0;
     width: 70px;
     height: 100px;
-    left: 50px;
-    top: 240px;
+    left: 35%;
+    top: 42%;
     object-fit: contain;
     z-index: 2;
     cursor: pointer;
@@ -257,8 +257,8 @@ body {
     display: flex;
     position: absolute;
     width: 70px;
-    left: 180px;
-    top: 350px;
+    left: 45%;
+    top: 68%;
     height: 100px;
     object-fit: contain;
     z-index: 2;
@@ -450,4 +450,13 @@ audio {
     width: 300px;
     top: 68%;
     left: 60%;
+}
+
+#entranceRoom {
+    height: 100vh;
+    background-image: url("images/scaryRoom2.jpg");
+    background-color: rgba(50, 69, 106, 0.891);
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
 }
