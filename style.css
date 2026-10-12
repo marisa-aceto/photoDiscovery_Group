@@ -197,13 +197,12 @@ body {
 }
 
 #shelf{
-    width: 450px;
     position: absolute;
-    margin: 0 auto;
-    height: 500px;
-    background-color: brown;
-    border: 5px solid black;
-    bottom: 80px;
+    display: flex;
+    height: 50px;
+    width: 35px;
+    left: 30%;
+    top: 40%;
 }
 
 #book1, #book2{
@@ -253,8 +252,9 @@ body {
 }
 
 #table{
+    position: absolute;
     width: 500px;
-    display: block;
+    display: flex;
     bottom: 50%;
 }
 
