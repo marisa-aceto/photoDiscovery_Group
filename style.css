@@ -96,6 +96,23 @@ body {
     transition: transform 0.5s ease;
 }
 
+#ghost5 {
+    display: flex;
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    top: 10%;
+    left: 70%;
+    z-index: 2;
+    opacity: 0.3;
+    transition: 0.1s ease;    
+    z-index: 2;
+}
+
+#ghost5:hover {
+    opacity: 0.5;
+}
+
 #ghost6 {
     display: flex;
     position: absolute;
