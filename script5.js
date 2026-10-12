@@ -1,6 +1,6 @@
-let ghost4 = document.getElementById('ghost4');
+let ghost3 = document.getElementById('ghost3');
 
 window.addEventListener("mousemove", function(event) {
-    ghost4.style.left = (event.clientX- 50) + "px";
-    ghost4.style.top = (event.clientY - 50) + "px";
+    ghost3.style.left = (event.clientX- 50) + "px";
+    ghost3.style.top = (event.clientY - 50) + "px";
 });
