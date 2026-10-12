@@ -23,7 +23,7 @@ ghost2.addEventListener("click", function() {
     ghost2Click = true;
     let ghost2Pos = ghost2.getBoundingClientRect().top;
     if (ghost2Click && (ghost2Pos + window.scrollY) >= 1700) {
-        window.location.href = "index6.html";
+        window.location.href = "index7.html";
         ghost2Click = false;
     }
 });

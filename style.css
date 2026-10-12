@@ -203,6 +203,23 @@ body {
     position: fixed;
 }
 
+#escapeMessage {
+    font-family: 'Spooky';
+    font-size: 80px;
+    color: whitesmoke;
+}
+
+#room1Quote {
+    font-family: 'Spooky';
+    font-size: 20px;
+    color: whitesmoke;
+    display: flex;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    opacity: 0;
+}
+
 #room5Subtitle {
     font-family: 'Spooky';
     color: whitesmoke;
@@ -399,6 +416,7 @@ audio {
 
 #bat1:hover {
     mix-blend-mode: difference;
+    opacity: 1;
 }
 
 #bat2 {
@@ -407,8 +425,13 @@ audio {
     height: 100px;
     width: 100px;
     top: 20%;
-    opacity: 1;
+    opacity: 0.5;
     left: 60%;
+    transform: scaleX(-1);
+}
+
+#bat2:hover {
+    opacity: 1;
 }
 
 #bat3 {
@@ -417,6 +440,13 @@ audio {
     height: 100px;
     width: 100px;
     opacity: 0.5;
+    left: 80%;
+    top: 35%;
+
+}
+
+#bat3:hover {
+    opacity: 1;
 }
 
 #bat4 {
@@ -425,6 +455,14 @@ audio {
     height: 100px;
     width: 100px;
     opacity: 0.5;
+    left: 25%;
+    top: 60%;
+    transform: scaleX(-1);
+}
+
+#bat4:hover {
+    mix-blend-mode: difference;
+    opacity: 1;
 }
 
 #bat5 {
@@ -433,6 +471,13 @@ audio {
     height: 100px;
     width: 100px;
     opacity: 0.5;
+    left: 50%;
+    top: 75%;
+}
+
+#bat5:hover {
+    mix-blend-mode: difference;
+    opacity: 1;
 }
 
 #vampireRoom {
