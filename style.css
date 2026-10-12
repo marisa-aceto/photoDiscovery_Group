@@ -69,7 +69,7 @@ body {
 
 #ghost3 {
     display: flex;
-    position: absolute;
+    position: fixed;
     height: 100px;
     width: 100px;
     top: 25%;
@@ -98,7 +98,7 @@ body {
 
 #ghost5 {
     display: flex;
-    position: absolute;
+    position: fixed;
     height: 150px;
     width: 150px;
     top: 10%;
@@ -107,6 +107,7 @@ body {
     opacity: 0.3;
     transition: 0.1s ease;    
     z-index: 2;
+    pointer-events: none;
 }
 
 #ghost5:hover {
@@ -196,6 +197,10 @@ body {
     font-family: 'Spooky';
     font-size: 50px;
     color: whitesmoke;
+}
+
+#room2Title {
+    position: fixed;
 }
 
 #room5Subtitle {
@@ -381,4 +386,68 @@ audio {
     transform: scaleX(-1.25);
     rotate: 320deg;
     z-index: 3;
+}
+
+#bat1 {
+    display: flex;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    opacity: 0.5;
+    top: 20%;
+}
+
+#bat1:hover {
+    mix-blend-mode: difference;
+}
+
+#bat2 {
+    display: flex;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 20%;
+    opacity: 1;
+    left: 60%;
+}
+
+#bat3 {
+    display: flex;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    opacity: 0.5;
+}
+
+#bat4 {
+    display: flex;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    opacity: 0.5;
+}
+
+#bat5 {
+    display: flex;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    opacity: 0.5;
+}
+
+#vampireRoom {
+    height: 150vh;
+    background-image: url("images/vampireLair.jpg");
+    background-color: red;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#vampire2 {
+    position: absolute;
+    display: flex;
+    height: 300px;
+    width: 300px;
+    top: 68%;
+    left: 60%;
 }
