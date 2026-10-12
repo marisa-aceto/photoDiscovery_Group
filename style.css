@@ -198,6 +198,12 @@ body {
     color: whitesmoke;
 }
 
+#room5Subtitle {
+    font-family: 'Spooky';
+    color: whitesmoke;
+    font-size: 20px;
+}
+
 #ghostDrop2, #ghostDrop3{
     height: 100vh;
 }
@@ -319,6 +325,12 @@ body {
     width: 300px;
     left: 50%;
     top: 60%;
+    z-index: 3;
+    transition: transform 0.5s ease;
+}
+
+#werewolf:hover {
+    transform: translate(-100px) scale(2);
 }
 
 #wallPaper {
@@ -328,6 +340,7 @@ body {
     width: 35px;
     left: 30%;
     top: 40%;
+    z-index: 3;
 }
 
 #wallPaper:hover {
@@ -346,4 +359,26 @@ body {
 
 audio {
     z-index: 5;
+}
+
+#blood {
+    display: flex;
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    top: 90%;
+    left: 40%;
+    mix-blend-mode: darken;
+}
+
+#tracks {
+    display: flex;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 95%;
+    left: 40%;
+    transform: scaleX(-1.25);
+    rotate: 320deg;
+    z-index: 3;
 }
