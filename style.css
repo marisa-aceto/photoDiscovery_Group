@@ -181,11 +181,11 @@ body {
     color: whitesmoke;
 }
 
-#ghostDrop2{
+#ghostDrop2, #ghostDrop3{
     height: 100vh;
 }
 
-#ghost2Text{
+#ghost2Text, #ghost3Text{
     display: flex;
     position: absolute;
     top: 10%;
@@ -207,6 +207,7 @@ body {
 }
 
 #book1, #book2{
+    display: flex;
     position: absolute;
     bottom: 0;
     width: 70px;
@@ -224,7 +225,9 @@ body {
 }
 
 #candy1{
+    display: flex;
     position: absolute;
+    top: 15%;
     bottom: 0;
     width:50px;
     height: 130px;
@@ -236,7 +239,9 @@ body {
 }
 
 #candy2{
+    display: flex;
     position: absolute;
+    top: 15%;
     bottom: 0;
     width:50px;
     height: 130px;
@@ -250,6 +255,7 @@ body {
 #table{
     width: 500px;
     display: block;
+    bottom: 50%;
 }
 
 #roomWindow1 {
