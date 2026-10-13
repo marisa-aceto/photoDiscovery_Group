@@ -124,6 +124,7 @@ body {
     z-index: 2;
     opacity: 0.3;
     transition: transform 0.5s ease;
+    pointer-events: none;
 }
 
 #ghost4:hover {
@@ -153,6 +154,14 @@ body {
     left: 47%;
     z-index: 1;
     transition: transform 0.5s ease;
+}
+
+#pumpkin2 {
+    display: block;
+    width: 120px;
+    height: auto;
+    margin: 0 auto;
+    cursor: pointer;
 }
 
 #pumpkinTalk {
@@ -193,6 +202,24 @@ body {
     opacity: 1;
 }
 
+#keyContainer {
+    text-align: center;
+    margin-top: 25px;
+    font-family: 'Spooky';
+    color: whitesmoke;
+}
+
+#key {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#key:hover {
+    transform: scale(1.15);
+}
+
 #room2Title, #room3Title, #room4Title, #room5Title, #room6Title, #room7Title {
     font-family: 'Spooky';
     font-size: 50px;
@@ -203,7 +230,7 @@ body {
     position: fixed;
 }
 
-#escapeMessage {
+#escapeMessage, #gameOverMessage {
     font-family: 'Spooky';
     font-size: 80px;
     color: whitesmoke;
@@ -504,4 +531,27 @@ audio {
     background-size: 100%;
     background-position: bottom;
     background-repeat: no-repeat;
+}
+
+.hidden {
+    display: none;
+}
+
+#puzzle {
+    text-align: center;
+    margin: 30px auto;
+}
+
+#puzzle img {
+    width: 180px;
+    height: 200px;
+    object-fit: contain;
+    cursor: pointer;
+    align-items: center;
+}
+
+#puzzle h2 {
+    font-family: 'Spooky';
+    color: whitesmoke;
+    text-align: center;
 }
