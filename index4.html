@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,23 +9,60 @@
 </head>
 
 <body>
+    <section id="room4">
+        <audio loop autoplay>
+            <source src="music/creepyMusic.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
 
-    <audio loop autoplay>
-        <source src="music/creepyMusic.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+        <section>
+            <h1 id="room4Title">
+                The door is sealed. Let the flames guide you...
+            </h1>
 
-    <section>
+            <p id="room4Instructions">
+                Three skulls guard the secret code. Click each candle atop the skulls to reveal its number.
+            </p>
 
-    <h1 id="room4Title">This is the third room</h1>
-    <div class="game-room">
-        <div class="ghost"></div>
-    </div>
+            <div id="candles">
+                <div class="candle">
+                    <p id="hint1">?</p>
+                    <img id="candle1" class="candleImage" src="images/skull-candle.png" alt="First candle">
+                </div>
 
-    <div class="candy"></div>
+                <div class="candle">
+                    <p id="hint2">?</p>
+                    <img id="candle2" class="candleImage" src="images/skull-candle.png" alt="Second candle">
+                </div>
 
-    </section>
+                <div class="candle">
+                    <p id="hint3">?</p>
+                    <img id="candle3" class="candleImage" src="images/skull-candle.png" alt="Third candle">
+                </div>
+            </div>
 
-    <script src="script4.js"></script> 
+            <div id="codeSection">
+                <label for="codeInput">Enter the three-digit code:</label>
+
+                <div id="codeEntry">
+                    <input type="text" id="codeInput" maxlength="3" inputmode="numeric" placeholder="???"
+                        autocomplete="off">
+
+                    <button id="unlockButton">Unlock</button>
+                </div>
+
+                <p id="message"></p>
+            </div>
+
+            <div id="exit" class="hidden">
+                <p>The lock clicks open. A hidden passage appears...</p>
+                <a href="index5.html">
+                    <img src="images/key.png" alt="Key to the next room" id="exitKey">
+                </a>
+            </div>
+        </section>
+
+        <script src="script4.js"></script>
 </body>
+
 </html>
