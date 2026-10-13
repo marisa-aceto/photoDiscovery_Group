@@ -28,8 +28,6 @@ function moveGhost(){
     ghost.style.top = y + 'px';
 }
 
-function getCandy(){
-}
     
 function ghostActivity(candy){
     candy.classList.add("taken");
