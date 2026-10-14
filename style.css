@@ -763,6 +763,7 @@ audio {
     height: 40px;
     width: 80px;
     opacity: 0;
+    z-index: 3;
 }
 
 #vampButton {
