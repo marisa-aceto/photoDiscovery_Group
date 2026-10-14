@@ -79,7 +79,6 @@ body {
     transform: scaleX(-1);
     transition: 0.1s ease;
     z-index: 2;
-    pointer-events: none;
 }
 
 #ghost3:hover {
@@ -337,7 +336,7 @@ body {
 }
 
 #room2Title {
-    position: fixed;
+
 }
 
 #escapeMessage,
@@ -369,7 +368,6 @@ body {
     height: 100vh;
 }
 
-#ghost2Text,
 #ghost3Text {
     display: flex;
     position: absolute;
@@ -379,6 +377,18 @@ body {
     color: white;
     font-size: 20px;
     font-family: 'Spooky';
+}
+
+#ghost2Text {
+    display: flex;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 20px;
+    font-family: 'Spooky';
+    opacity: 0;
 }
 
 .shelf {
@@ -410,6 +420,10 @@ body {
     cursor: pointer;
 }
 
+#book1:hover {
+    filter: drop-shadow(0 0 8px #ff0000);
+}
+
 #book2 {
     display: flex;
     position: absolute;
@@ -420,6 +434,10 @@ body {
     object-fit: contain;
     z-index: 2;
     cursor: pointer;
+}
+
+#book2:hover {
+    filter: drop-shadow(0 0 8px #ffffff);
 }
 
 #book1.taken,

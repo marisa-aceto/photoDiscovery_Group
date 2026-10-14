@@ -1,10 +1,6 @@
 const choiceContainer = document.getElementById("choice-container");
-
-let ghost2 = document.getElementById('ghost');
-window.addEventListener("mousemove", function(event) {
-    ghost2.style.left = ((event.clientX) - 50) + "px";
-    ghost2.style.top = ((event.clientY) - 50) + "px";
-});
+let ghostText = document.getElementById('ghost2Text');
+let ghost = document.getElementById('ghost3');
 
 let candy1 = document.getElementById('candy1');
 candy1.addEventListener("click", function() {
@@ -26,6 +22,11 @@ function moveGhost(){
     ghost.style.left = x + 'px';
     ghost.style.top = y + 'px';
 }
+
+ghost3.addEventListener("click", function() {
+    ghost3.style.opacity = '1';
+    ghostText.style.opacity = '1';
+});
 
     
 function ghostActivity(candy){
@@ -50,14 +51,18 @@ ghost.book.style.transform = "translate(-50%, -50%)";
 candy.style.opacity = "0";
 
 setTimeout(function() {
+    ghost.addEventListener("click", function() {
+        ghost3.style.opacity = '1';
+        ghostText.style.opacity = '1';
+    });
     if (choice ==="candy1"){
         window.location.href = "index8.html";
     } else if (choice ==="candy2"){
         window.location.href = "index9.html";
         endGame();
+        
     }
 }); 
-
 
 function endGame(){
     choiceContainer.innerHTML = `
