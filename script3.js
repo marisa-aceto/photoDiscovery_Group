@@ -5,17 +5,16 @@ window.addEventListener("mousemove", function(event) {
     ghost2.style.left = ((event.clientX) - 50) + "px";
     ghost2.style.top = ((event.clientY) - 50) + "px";
 });
-let candy = document.getElementById('candy');
-candy.addEventListener("click", function() {
-let candy1 = document.getElementById('candy');
+
+let candy1 = document.getElementById('candy1');
 candy1.addEventListener("click", function() {
-    window.location.href = "index5.html";
+    window.location.href = "index9.html";
 });
-});
+
 
 let candy2 = document.getElementById('candy2');
 candy2.addEventListener("click", function() {
-    window.location.href = "index3.html";
+    window.location.href = "index8.html";
 });
 
 function moveGhost(){
@@ -52,9 +51,9 @@ candy.style.opacity = "0";
 
 setTimeout(function() {
     if (choice ==="candy1"){
-        window.location.href = "index5.html";
+        window.location.href = "index8.html";
     } else if (choice ==="candy2"){
-        window.location.href = "index3.html";
+        window.location.href = "index9.html";
         endGame();
     }
 }); 

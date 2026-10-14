@@ -413,11 +413,11 @@ body {
 #candy1 {
     display: flex;
     position: absolute;
-    top: 35%;
+    top: 75%;
     bottom: 0;
-    width: 50px;
-    height: 130px;
-    left: 150px;
+    width: 150px;
+    height: 150px;
+    left: 20%;
     object-fit: contain;
     display: block;
     z-index: 10;
@@ -427,11 +427,10 @@ body {
 #candy2 {
     display: flex;
     position: absolute;
-    top: 35%;
-    bottom: 0;
-    width: 50px;
-    height: 130px;
-    left: 220px;
+    top: 93%;
+    width: 150px;
+    height: 150px;
+    left: 85%;
     object-fit: contain;
     display: block;
     z-index: 10;
@@ -534,6 +533,7 @@ audio {
     width: 100px;
     opacity: 0.5;
     top: 20%;
+    animation: bats 5s ease-in-out alternate infinite;
 }
 
 #bat1:hover {
@@ -550,6 +550,7 @@ audio {
     opacity: 0.5;
     left: 60%;
     transform: scaleX(-1);
+    animation: bats 8s ease-in-out alternate infinite;
 }
 
 #bat2:hover {
@@ -564,6 +565,7 @@ audio {
     opacity: 0.5;
     left: 80%;
     top: 35%;
+    animation: bats 10s ease-in-out alternate infinite;
 
 }
 
@@ -580,6 +582,7 @@ audio {
     left: 25%;
     top: 60%;
     transform: scaleX(-1);
+    animation: bats 3s ease-in-out alternate infinite;
 }
 
 #bat4:hover {
@@ -595,6 +598,7 @@ audio {
     opacity: 0.5;
     left: 50%;
     top: 75%;
+    animation: bats 6s ease-in-out alternate infinite;
 }
 
 #bat5:hover {
@@ -657,4 +661,39 @@ audio {
     background-color: rgba(50, 69, 106, 0.891);
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+#hauntedDining {
+    height: 150vh;
+    background-image: url("images/diningRoom.jpg");
+    background-color: rgba(50, 69, 106, 0.891);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#catAlbert {
+    height: 150px;
+    width: 150px;
+    display: flex;
+    position: absolute;
+    top: 95%;
+    left: 20%;
+    opacity: 0.5;
+    transition: transform 0.5s ease;
+}
+
+#catAlbert:hover {
+    transform: scale(3);
+}
+
+@keyframes bats {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
 }
