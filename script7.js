@@ -6,19 +6,16 @@ let hat = document.getElementById("witch-hat");
 let puzzle = document.getElementById("puzzle");
 let room7Title = document.getElementById("room7Title");
 
-// Track which image each object displays
 let mirrorNum = 3;
 let dollNum = 2;
 let hatNum = 1;
 let puzzleSolved = false;
 
-// Ghost follows the mouse
 window.addEventListener("mousemove", function(event) {
     ghost6.style.left = (event.clientX - 50) + "px";
     ghost6.style.top = (event.clientY - 50) + "px";
 });
 
-// Reveal the puzzle
 pumpkin.addEventListener("click", function() {
     pumpkin.style.display = "none";
     puzzle.classList.remove("hidden");
