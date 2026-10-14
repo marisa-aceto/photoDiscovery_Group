@@ -37,6 +37,7 @@ body {
     border: 5px solid white;
     font-family: 'Spooky';
     text-shadow: #e3a5a7 2px 0 10px;
+    animation: titleText1 0.75s ease-in-out alternate infinite;
 }
 
 #ghost1 {
@@ -734,3 +735,19 @@ audio {
     font-family: 'Spooky';
     font-size: 50px;
 }
+
+@keyframes titleText1 {
+    0% {
+        transform: translateX(-100px) scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(0px) scale(0.5);
+        opacity: 0.25;
+    }
+    100% {
+        transform: translateX(100px) scale(1);
+        opacity: 1;
+    }
+}
+
