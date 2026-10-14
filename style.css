@@ -24,7 +24,7 @@ body {
     font-style: normal;
 }
 
-#titleText {
+.titleText {
     display: flex;
     position: fixed;
     text-align: center;
