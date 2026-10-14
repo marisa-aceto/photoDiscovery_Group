@@ -1,6 +1,6 @@
 const choiceContainer = document.getElementById("choice-container");
 let ghostText = document.getElementById('ghost2Text');
-let ghost = document.getElementById('ghost3');
+let ghost = document.getElementById('ghost8');
 
 let candy1 = document.getElementById('candy1');
 candy1.addEventListener("click", function() {
@@ -23,8 +23,8 @@ function moveGhost(){
     ghost.style.top = y + 'px';
 }
 
-ghost3.addEventListener("click", function() {
-    ghost3.style.opacity = '1';
+ghost.addEventListener("click", function() {
+    ghost.style.opacity = '1';
     ghostText.style.opacity = '1';
 });
 
@@ -52,7 +52,7 @@ candy.style.opacity = "0";
 
 setTimeout(function() {
     ghost.addEventListener("click", function() {
-        ghost3.style.opacity = '1';
+        ghost.style.opacity = '1';
         ghostText.style.opacity = '1';
     });
     if (choice ==="candy1"){

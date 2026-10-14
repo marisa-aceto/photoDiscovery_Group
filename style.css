@@ -78,7 +78,23 @@ body {
     opacity: 0.3;
     transform: scaleX(-1);
     transition: 0.1s ease;
+    z-index: 1;
+    pointer-events: none;
+    
+}
+
+#ghost8 {
+    display: flex;
+    position: fixed;
+    height: 100px;
+    width: 100px;
+    top: 25%;
     z-index: 2;
+    opacity: 0.3;
+    transform: scaleX(-1);
+    transition: 0.1s ease;
+    z-index: 2;
+    
 }
 
 #ghost3:hover {
