@@ -728,3 +728,9 @@ audio {
 #wolfButton:hover {
     color: blue;
 }
+
+#restartButton1,
+#restartButton2 {
+    font-family: 'Spooky';
+    font-size: 50px;
+}
