@@ -78,6 +78,7 @@ body {
     transform: scaleX(-1);
     transition: 0.1s ease;
     z-index: 2;
+    pointer-events: none;
 }
 
 #ghost3:hover {
@@ -683,7 +684,8 @@ audio {
 }
 
 #catAlbert:hover {
-    transform: scale(3);
+    transform: scale(2);
+    opacity: 1;
 }
 
 @keyframes bats {
@@ -696,4 +698,33 @@ audio {
   100% {
     transform: translateX(100px);
   }
+}
+
+#vampButton, 
+#wolfButton {
+    display: inline-flex;
+    position: absolute;
+    font-family: 'Spooky';
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    height: 40px;
+    width: 80px;
+    opacity: 0;
+}
+
+#vampButton {
+    left: 60%;
+}
+
+#vampButton:hover {
+    color: red;
+}
+
+#wolfButton {
+    left: 40%;
+}
+
+#wolfButton:hover {
+    color: blue;
 }

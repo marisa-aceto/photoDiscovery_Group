@@ -11,6 +11,7 @@ let bat2Yes = false;
 let bat3Yes = false;
 let bat4Yes = false;
 let bat5Yes = false;
+let albert = document.getElementById('catAlbert');
 
 window.addEventListener("mousemove", function(event) {
     ghost5.style.left = (event.clientX- 50) + "px";
@@ -62,4 +63,8 @@ bat5.addEventListener("click", function() {
 
 vampire2.addEventListener("click", function() { 
     quote.style.opacity = '1';
+});
+
+albert.addEventListener("click", function() { 
+    window.location.href = "index9.html";
 });
